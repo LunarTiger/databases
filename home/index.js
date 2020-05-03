@@ -64,7 +64,7 @@ var message = homedatabase.ref('post-message/html');
 message.on('value', (function(snapshot) {
 	var messageVal = snapshot.val();
 	if(messageVal){
-		document.getElementById('home-child').innerHTML += "<p>post-message/html:&nbsp; "+idVal+"</p>";
+		document.getElementById('home-child').innerHTML += "<p>post-message/html:&nbsp; "+messageVal+"</p>";
 	}
 	if(!messageVal){
 		document.getElementById('home-child').innerHTML += "<p>post-message/html:&nbsp; <mark>False</mark>.</p>";

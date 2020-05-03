@@ -1,8 +1,8 @@
 var home = {
 	databaseURL: "https://lunar-home.firebaseio.com/",
 };
-homefirebase.initializeApp(home);
-var homedatabase = homefirebase.database();
+firebase.initializeApp(home);
+var homedatabase = firebase.database();
 //Event
 var event = homedatabase.ref('stwl/next-event');
 event.on('value', (function(snapshot) {
@@ -74,8 +74,8 @@ message.on('value', (function(snapshot) {
 var productions = {
 	databaseURL: "https://vr-productions-fce36.firebaseio.com/",
 };
-productionsfirebase.initializeApp(productions);
-var productionsdatabase = productionsfirebase.database();
+firebase.initializeApp(productions);
+var productionsdatabase = firebase.database();
 //Rooftop Video
 var rooftop = productionsdatabase.ref('the-rooftop/id');
 rooftop.on('value', (function(snapshot) {

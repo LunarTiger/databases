@@ -12,7 +12,7 @@ event.on('value', (function(snapshot) {
 		document.getElementById('home-child').innerHTML += "<p>stwl/next-event:&nbsp; "+eventVal+"</p>";
 	}
 	if(!eventVal){
-		document.getElementById('home-child').innerHTML += "<p>stwl/next-event:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('home-child').innerHTML += "<p>stwl/next-event:&nbsp; <mark>False</mark></p>";
 	}
 }));
 //Book
@@ -23,7 +23,7 @@ book.on('value', (function(snapshot) {
 		document.getElementById('home-child').innerHTML += "<p>stwl/book:&nbsp; "+bookVal+"</p>";
 	}
 	if(!bookVal){
-		document.getElementById('home-child').innerHTML += "<p>stwl/book:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('home-child').innerHTML += "<p>stwl/book:&nbsp; <mark>False</mark></p>";
 	}
 }));
 //Location
@@ -34,7 +34,7 @@ loc.on('value', (function(snapshot) {
 		document.getElementById('home-child').innerHTML += "<p>lunar/location:&nbsp; "+locVal+"</p>";
 	}
 	if(!locVal){
-		document.getElementById('home-child').innerHTML += "<p>lunar/location:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('home-child').innerHTML += "<p>lunar/location:&nbsp; <mark>False</mark></p>";
 	}
 }));
 //Toot
@@ -45,7 +45,7 @@ toot.on('value', (function(snapshot) {
 		document.getElementById('home-child').innerHTML += "<p>mastodon/toot:&nbsp; "+tootVal+"</p>";
 	}
 	if(!tootVal){
-		document.getElementById('home-child').innerHTML += "<p>mastodon/toot:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('home-child').innerHTML += "<p>mastodon/toot:&nbsp; <mark>False</mark></p>";
 	}
 }));
 //Music
@@ -56,7 +56,7 @@ id.on('value', (function(snapshot) {
 		document.getElementById('home-child').innerHTML += "<p>music-embed/id:&nbsp; "+idVal+"</p>";
 	}
 	if(!idVal){
-		document.getElementById('home-child').innerHTML += "<p>music-embed/id:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('home-child').innerHTML += "<p>music-embed/id:&nbsp; <mark>False</mark></p>";
 	}
 }));
 //Post-Message
@@ -67,6 +67,6 @@ message.on('value', (function(snapshot) {
 		document.getElementById('home-child').innerHTML += "<p>post-message/html:&nbsp; "+messageVal+"</p>";
 	}
 	if(!messageVal){
-		document.getElementById('home-child').innerHTML += "<p>post-message/html:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('home-child').innerHTML += "<p>post-message/html:&nbsp; <mark>False</mark></p>";
 	}
 }));

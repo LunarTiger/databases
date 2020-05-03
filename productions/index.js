@@ -12,7 +12,7 @@ rooftop.on('value', (function(snapshot) {
 		document.getElementById('productions-child').innerHTML += "<p>the-rooftop/id:&nbsp; "+rooftopVal+"</p>";
 	}
 	if(!rooftopVal){
-		document.getElementById('productions-child').innerHTML += "<p>the-rooftop/id:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('productions-child').innerHTML += "<p>the-rooftop/id:&nbsp; <mark>False</mark></p>";
 	}
 }));
 //Open Mic Night Video
@@ -24,7 +24,7 @@ omn.on('value', (function(snapshot) {
 		document.getElementById('productions-child').innerHTML += "<p>open-mic/id:&nbsp; "+omnVal+"</p>";
 	}
 	if(!omnVal){
-		document.getElementById('productions-child').innerHTML += "<p>open-mic/id:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('productions-child').innerHTML += "<p>open-mic/id:&nbsp; <mark>False</mark></p>";
 	}
 }));
 //The Hunt
@@ -35,6 +35,6 @@ hunt.on('value', (function(snapshot) {
 		document.getElementById('productions-child').innerHTML += "<p>the-hunt/id:&nbsp; "+huntVal+"</p>";
 	}
 	if(!huntVal){
-		document.getElementById('productions-child').innerHTML += "<p>the-hunt/id:&nbsp; <mark>False</mark>.</p>";
+		document.getElementById('productions-child').innerHTML += "<p>the-hunt/id:&nbsp; <mark>False</mark></p>";
 	}
 }));

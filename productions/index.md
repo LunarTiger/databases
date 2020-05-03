@@ -3,4 +3,6 @@
 		<div id="productions-child" class="innertext" data-parent="productions">
 		</div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
 <script src="index.js"></script>

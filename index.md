@@ -9,5 +9,3 @@
 		<div id="worms-child" class="innertext" data-parent="worms">
 		</div>-->
 </div>
-<script src="/assets/js/collapsible.js"></script>
-<script src="assets/js/index.js"></script>

@@ -8,7 +8,6 @@ var rooftop = productionsdatabase.ref('the-rooftop/id');
 rooftop.on('value', (function(snapshot) {
 	var rooftopVal = snapshot.val();
 	if(rooftopVal){
-		var inside = "";
 		document.getElementById('productions-child').innerHTML += "<p>the-rooftop/id:&nbsp; "+rooftopVal+"</p>";
 	}
 	if(!rooftopVal){
@@ -20,7 +19,6 @@ var omn = productionsdatabase.ref('open-mic/id');
 omn.on('value', (function(snapshot) {
 	var omnVal = snapshot.val();
 	if(omnVal){
-		var inside = "";
 		document.getElementById('productions-child').innerHTML += "<p>open-mic/id:&nbsp; "+omnVal+"</p>";
 	}
 	if(!omnVal){

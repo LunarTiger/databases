@@ -8,7 +8,6 @@ var event = homedatabase.ref('stwl/next-event');
 event.on('value', (function(snapshot) {
 	var eventVal = snapshot.val();
 	if(eventVal){
-		var inside = "";
 		document.getElementById('home-child').innerHTML += "<p>stwl/next-event:&nbsp; "+eventVal+"</p>";
 	}
 	if(!eventVal){

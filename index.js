@@ -69,7 +69,7 @@ message.on('value', (function(snapshot) {
 		document.getElementById('home-child').innerHTML += "<p>post-message/html:&nbsp; <mark>False</mark></p>";
 	}
 }));
-/////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var productionsConfig = {
 	databaseURL: "https://vr-productions-fce36.firebaseio.com/",
 };
@@ -106,5 +106,33 @@ hunt.on('value', (function(snapshot) {
 	}
 	if(!huntVal){
 		document.getElementById('productions-child').innerHTML += "<p>the-hunt/id:&nbsp; <mark>False</mark></p>";
+	}
+}));
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var wormsConfig = {
+	databaseURL: "https://worms-68137.firebaseio.com/",
+};
+var worms = firebase.initializeApp(wormsConfig, "worms");
+var wormsDatabase = worms.database();
+//ID
+var wid = wormsDatabase.ref('id');
+wid.on('value', (function(snapshot) {
+	var widVal = snapshot.val();
+	if(widVal){
+		document.getElementById('worms-child').innerHTML += "<p>id:&nbsp; "+widVal+"</p>";
+	}
+	if(!widVal){
+		document.getElementById('worms-child').innerHTML += "<p>id:&nbsp; <mark>False</mark></p>";
+	}
+}));
+//State
+var state = wormsDatabase.ref('state');
+state.on('value', (function(snapshot) {
+	var stateVal = snapshot.val();
+	if(stateVal){
+		document.getElementById('worms-child').innerHTML += "<p>state:&nbsp; "+stateVal+"</p>";
+	}
+	if(!stateVal){
+		document.getElementById('worms-child').innerHTML += "<p>state:&nbsp; <mark>False</mark></p>";
 	}
 }));

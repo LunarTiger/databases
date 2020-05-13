@@ -12,5 +12,3 @@
 <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
 <script src="index.js"></script>
-<!--<p>Please make a selection above.</p>
-<p>póg mo thóin</p>-->
